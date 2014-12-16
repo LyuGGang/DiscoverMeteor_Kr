@@ -209,7 +209,7 @@ Posts.allow({
 Meteor.methods({
   ...
 ~~~
-<%= caption "collections/posts.js" %>
+<%= caption "lib/collections/posts.js" %>
 <%= highlight "3~6" %>
 
 <%= commit "8-2", "Post의 소유자를 검사하는 기본적인 접근권한 제어 기능을 추가했다." %>
@@ -235,7 +235,7 @@ Posts.deny({
   }
 });
 ~~~
-<%= caption "collections/posts.js" %>
+<%= caption "lib/collections/posts.js" %>
 <%= highlight "8~13" %>
 
 <%= commit "8-3", "Post의 특정 필드만 수정할 수 있게 허용한다." %>
